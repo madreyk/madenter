@@ -19,6 +19,7 @@
 >>###### donate.html - список всех возможных "Пончиков"
 >>###### FAQ.html - FAQ наших серверов (временно не доступно)
 >>###### license.html - сайт, предоставляющий лицензию MadENTer
+>>###### README.md - файл, который следует прочитать(ты сейчас здесь:)
 
 >#### Файлы (files) - "корень репозитория"/files
 >>###### MadEnt.ICON.png - иконка сайта (by [Trickson_Onich](https://t.me/Trickson_Onich))
@@ -27,6 +28,4 @@
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-https://www.privacypolicygenerator.info/live.php?token=BA68QBAIJQ2RhytytOjuqQpqRPXNqYNI
-
-Ознакомьтесь с политикой конфедициальности
+###### Ознакомьтесь с политикой конфедициальности
