@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mad Entertainment</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href='files/MadEnt.ICON.png' />
+    <meta name="description" content="Mad Entertainment - союз серверов, для комфортной игры разных прослоек общества. Наш телеграм - @madrpbot"/>
+    <meta name="keywords" content="minecraft, madrp, madent, mad entertainment, mad школа, mad ent"/>
+<style type="text/css">
+      body {
+        font-family:'Roboto', arial, helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: medium;
+        color: white;
+        background-color: #1c1c21;
+      }
+      a {text-decoration: none;}
+      .tableRoot {
+        margin: 0 auto; 
+        min-width: 850px; 
+        background-color: #303033; 
+        box-shadow: 0px 0px 20px #CCCCCC;
+        border: 0px solid #808080;
+        /* Use border-spacing instead of border-collapse, otherwise IE doesn't show the shadow */
+        border-spacing:0;
+      }
+      .header {
+        background-color: #313E7C;
+        padding-bottom: 0.32em;
+      }
+      .headerTitle {
+        font-family:'Oswald', arial, helvetica, sans-serif;
+        font-size:300%; 
+        font-weight:bold; 
+        padding-left: 20px;
+        padding-right: 40px;
+        line-height: 1.3em;
+      }
+      .headerTitle A {
+        color: #F0F3FF; 
+        text-decoration: none;
+      }
+      .headerNav {
+        text-align: left; 
+        background-color: #313E7C;
+        border-width: 0px;
+        margin-left: 30px
+      }
+      .headerNav A {
+        color: #F0F3FF; 
+        text-decoration: none;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+      }
+      .headerNav A:hover {
+        background-color: #6974A3;
+        transition: .25s;
+        text-decoration: none;
+      }
+      .content {
+        padding: 18px;
+        padding-top: 10px; 
+        text-align: left; 
+        text-indent: 0px; 
+        margin: 10px;
+      }
+      .content A:hover {
+      }
+      .footer {
+        font-size:small; 
+        text-align: right;  
+        background-color: #313E7C; 
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+      }
+      .footerIcon {
+      }
+      .footerIcon IMG {
+        margin-bottom: -0.3em;
+        margin-right: 0.7em;
+        width: 1.2em;
+        height: 1.2em;
+      }
+      .footerText A {
+        text-decoration: none;
+        padding-left: 0.7em; 
+        padding-right: 0.7em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        color: #F0F3FF;
+      }
+      .footerText A:hover {
+        text-decoration: none;
+        background-color: #6974A3;
+        transition: .25s;
+        color: #F0F3FF;
+      }
+      .downloads {
+        width: 100%
+      }
+      .spoilerLink {
+        line-height: 200%;
+      }
+      .showAll {
+        text-align: center;
+        margin-top: 2em;
+      }
+      .downloadTable {
+        border-collapse: collapse;
+        width: auto;
+        line-height: 200%;
+      }
+      .downloadLine {
+      }
+      /* Columns */
+      .downloadLine .colFile {
+        width: 270px;
+        padding-left: 10px;
+      }
+      .downloadLine .colDownload A,
+      .downloadButton A {
+        width: 80px;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        border: 1px solid #5168CF;
+      }
+      .downloadLine .colMirror {
+        width: 100px; 
+        text-align: center;
+      }
+      .downloadLine .colChangelog {
+        width: 110px;
+      }
+      .downloadLine .colForge {
+        width: 115px;
+      }
+      .downloadLine .colDate {
+        width: 80px;
+        text-align: right;
+        padding-right: 10px;
+      }
+      /* Preview */
+      .downloadLinePreview {
+        background-color: #FFF6E3
+      }
+      /* Main */
+      .downloadLineMain:first-child {
+        background-color: #F0F3FF
+      }
+      .downloadLineMain:first-child .colDownload  A, 
+      .downloadButton A{
+        font-weight: normal;
+        color: white;
+        background-color: #313E7C;
+        border: 1px solid #313E7C;
+      }
+      .downloadLineMain:first-child .colDownload A:hover,
+      .downloadButton A:hover{
+        background-color: #6974A3;
+        transition: .25s;
+      }
+      LI STRONG {
+        line-height: 200%;
+      }
+      .tableDownload {
+        margin: 0 auto; 
+      }
+      .tableDonate TR {
+        height: 35px;
+      }
+      .scaleNearest {  
+        image-rendering:optimizeSpeed;             /* Legal fallback                 */
+        image-rendering:-moz-crisp-edges;          /* Firefox                        */
+        image-rendering:-o-crisp-edges;            /* Opera                          */
+        image-rendering:-webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+        image-rendering:optimize-contrast;         /* CSS3 Proposed                  */
+        -ms-interpolation-mode:nearest-neighbor;   /* IE8+                           */
+        image-rendering:pixelated;                 /* Chrome 41+, Firefox            */
+      }
+      .tableData {
+        border-collapse: collapse;
+      }
+      .tableData th {
+        color: #F0F3FF;
+        background-color: #313E7C;
+        font-weight: normal;
+      }
+      .tableData, .tableData th, .tableData td {
+        border: 0px solid black;
+      }
+      .tableData th, .tableData td {
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:5px;
+        padding-bottom:5px;
+      }
+      .tableDataDis {
+        background-color: #DCDCDC
+      }
+      .tableDataIcon {
+        width: 1.5em;
+        height: 1.5em;
+      }
+      .tableDataCape {
+        max-height: 44px;
+      }
+      .tableDataCentered {
+        text-align: center;
+      }
+      TD .tableDataEditable {
+        background-color: #FFF6E3;
+        border: 2px solid transparent;
+      }
+      input,
+      select {
+        font-family:'Roboto', arial, helvetica, sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: medium;
+        padding: 2px;
+      }
+      input[type=submit] {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+      }
+      input[type=checkbox] {
+        transform : scale(1.3);
+      }
+    </style>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30620569-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+  
+  <body link="red" vlink="white">
+
+  <table class="tableRoot">
+      <tr>
+        <td class="header">
+          <!-- Title -->
+          <span class="headerTitle">
+            <a href="home.html">MadEnterteinment</a>
+          </span>
+          <!-- Navigation -->
+          <span class="headerNav">
+            <a href="home.html">Home</a>
+            <a href="donate.html">Donate</a>
+            <a href="faq.html">FAQ</a>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="content">
+          <!-- Content -->
+<table class="tableDownload">
+      <tbody>
+        <tr>
+          <td>
+          <!--Cell 1-->
+
+
+          &nbsp;&nbsp;&nbsp;
+          </td>
+          <td style="vertical-align:top;" >
+            <table border="0" cellpadding="8" cellspacing="1" >
+              <tbody>
+                <tr>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                    </span>
+<h1>Privacy Policy for MadENTer</h1>
+<p> В MadENTertainment, доступной по адресу https://madreyk.github.io/MadENTer/, одним из наших основных приоритетов является конфиденциальность наших посетителей. Этот документ Политики конфиденциальности содержит типы информации, которая собирается и записывается MadENTertainment, и способы ее использования. Вся информация доступна только компании и пользователю</p>
+<p> Если у вас есть дополнительные вопросы или вам нужна дополнительная информация о нашей Политике конфиденциальности, не стесняйтесь обращаться к <a href="https://t.me/madrpbot">нам</a></p>
+<h2> Согласие </h2>
+<p> Используя наш веб-сайт и играя на наших серверах, вы тем самым соглашаетесь с нашей Политикой конфиденциальности и соглашаетесь с ее условиями. </p>
+<h2> Информация, которую мы собираем </h2>
+<p> Личная информация, которую вас просят предоставить, и причины, по которым вас просят предоставить ее, используется лишь для идентификации личности, а так же, для заполнения импровизированных документов </p>
+<h2> Как мы используем вашу информацию </h2>
+<p> Мы используем информацию, которую собираем, различными способами, в том числе для: </p>
+<ul>
+<li> Улучшения и персонализации нашего наш веб-сайта</li>
+<li> Проанализировать, как вы используете наш веб-сайт</li>
+<li> Разрабатывать новые продукты, услуги, функции и возможности</li>
+<li> Общаться с вами напрямую или через одного из наших партнеров, в том числе для обслуживания клиентов, чтобы предоставлять вам обновления и другую информацию, относящуюся к веб-сайту</li>
+<li> Отправлять вам электронные письма, для осведомления о новом обновлении, дополнении и другое</li>
+<li> Анализировать любую ситуацию и предотвращать её</li>
+</ul>
+<h2> Файлы журнала </h2>
+<p> MadENTertainment следует стандартной процедуре использования файлов журнала. Эти файлы регистрируют посетителей, когда они посещают веб-сайты. Все хостинговые компании делают это и часть аналитики хостинговых услуг. Информация, собираемая файлами журнала, включает адреса интернет-протокола (IP), тип браузера, поставщика услуг Интернета (ISP), отметку даты и времени, страницы перехода / выхода и, возможно, количество кликов. Они не связаны с какой-либо информацией, позволяющей установить личность. Цель информации - анализ тенденций, администрирование сайта, отслеживание движения пользователей по сайту и сбор демографической информации. Нужно это для улучшения веб-сайта. Например, если 60% пользователей используют Google Chrome, то мы будем оптимизировать веб-сайт под Google Chrome более усердно</p>
+<h2> Политика конфиденциальности рекламных партнеров </h2>
+
+<P> Вы можете ознакомиться с этим списком, чтобы найти Политику конфиденциальности для каждого из рекламных партнеров MadENTertainment. </p>
+
+<p> Сторонние рекламные серверы или рекламные сети используют такие технологии, как файлы cookie, JavaScript или веб-маяки, которые используются в их соответствующих рекламных объявлениях и ссылках, которые появляются на MadENTertainment, которые отправляются непосредственно в браузер пользователей. Это значит, что большинство операций воспроизводится на стороне клиента. Когда это происходит, они автоматически получают ваш IP-адрес. Эти технологии используются для измерения эффективности их рекламных кампаний и / или для персонализации рекламного контента, который вы видите на посещаемых вами веб-сайтах. </p>
+
+<p> Обратите внимание, что MadENTertainment не имеет доступа к этим файлам cookie, которые используются сторонними рекламодателями, и не контролирует их. (JavaScript мы используем, поэтому лучше включите его воспроизведение)</p>
+
+<h2> Политика конфиденциальности третьих лиц </h2>
+
+<p> Политика конфиденциальности MadENTertainment не распространяется на других рекламодателей или веб-сайты. Таким образом, мы советуем вам ознакомиться с соответствующими Политиками конфиденциальности этих сторонних рекламных серверов для получения более подробной информации. Он может включать их методы и инструкции о том, как отказаться от определенных вариантов. Информация третьим лицам не передается без вашего согласия</p>
+
+<p> Вы можете отключить файлы cookie в настройках вашего браузера. Чтобы узнать более подробную информацию об управлении файлами cookie в определенных веб-браузерах, ее можно найти на соответствующих веб-сайтах браузеров. </p>
+
+<h2> Права на конфиденциальность CCPA (не продавать мою личную информацию) </h2>
+
+<p> В соответствии с CCPA, среди прочих прав, потребители РФ имеют право: </p>
+<p> Требовать от компании, собирающей персональные данные потребителей, раскрытия категорий и конкретных частей персональных данных, которые компания собрала о потребителях. </p>
+<p> Запросить у компании удаление всех собранных ею личных данных о потребителе. </p>
+<p> Требовать, чтобы компания, продающая личные данные потребителя, не продавала личные данные потребителя. </p>
+<p> Если вы сделаете запрос, у нас будет один месяц, чтобы ответить вам. Если вы хотите воспользоваться каким-либо из этих прав, <a href="https://t.me/madrpbot">свяжитесь с нами</a></p>
+                    <br>
+                    <br>
+                    <br>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  <!--Cell 2C-->
+
+                    <!-- CPMStar 300x250 -->
+<script type="text/javascript">
+{
+  var cpmstar_rnd=Math.round(Math.random()*999999);
+  var cpmstar_pid=31345;
+  var cpmstar_subpid=13;
+}
+</script>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!-- CPMStar 300x250 -->
+<script type="text/javascript">
+{
+  var cpmstar_rnd=Math.round(Math.random()*999999);
+  var cpmstar_pid=31345;
+  var cpmstar_subpid=13;
+}
+</script>
+</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td>
+          <!--Cell 3-->
+          
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- End of content -->
+        </td>
+      </tr>
+      <tr>
+        <td class="footer">
+          <!-- Footer -->
+          <span class="footerIcon">
+            <a href="https://t.me/madrpbot/" target="_blank"><img alt="Telegram" src="files/telegram.png"></a>
+          </span>
+          <span class="footerText">
+            <a href="license.html">Лицензия</a>
+            <a href="contact.html">Контакты</a>
+          </span>
+        </td>
+      </tr>
+      </table>
+</body>
+</html>
